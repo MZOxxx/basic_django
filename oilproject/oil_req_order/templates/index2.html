@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรกของเว็บไซค์</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/form">Form</a>
+    <h1>"Index Oil request App html"</h1>
+    <hr>
+    <div>
+    <h1>สวัสดี , {{name}}</h1>
+    <h1>นามสกุล {{lname | lower }}</h1>  
+    <h2>อายุ  {{age}} ปี </h2>
+    {% if age >= 30 %}
+        <h3>คุณเป็นผู้ใหญ่แล้ว</h3>
+    {% else %}
+    <h3>คุณเป็นวัยรุ่น</h3>
+    {% endif %}
+    <hr>
+</div>
+</html>
